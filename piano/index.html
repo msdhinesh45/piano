@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piano</title>
+  <link rel="shortcut icon" href="./piano.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Piano</h1>
+  <div class="wrapper">
+    <div class="piano">
+      <div data-note="C" class="key white"><span class="note-label">C</span><audio src="./tunes/a.wav" id="C"></audio></div>
+      <div data-note="Db" class="key black"><span class="note-label">Db</span><audio src="./tunes/;.wav" id="Db"></audio></div>
+      <div data-note="D" class="key white"><span class="note-label">D</span><audio src="./tunes/d.wav" id="D"></audio></div>
+      <div data-note="Eb" class="key black"><span class="note-label">Eb</span><audio src="./tunes/e.wav" id="Eb"></audio></div>
+      <div data-note="E" class="key white"><span class="note-label">E</span><audio src="./tunes/f.wav" id="E"></audio></div>
+      <div data-note="F" class="key white"><span class="note-label">F</span><audio src="./tunes/g.wav" id="F"></audio></div>
+      <div data-note="Gb" class="key black"><span class="note-label">Gb</span><audio src="./tunes/h.wav" id="Gb"></audio></div>
+      <div data-note="G" class="key white"><span class="note-label">G</span><audio src="./tunes/j.wav" id="G"></audio></div>
+      <div data-note="Ab" class="key black"><span class="note-label">Ab</span><audio src="./tunes/k.wav" id="Ab"></audio></div>
+      <div data-note="A" class="key white"><span class="note-label">A</span><audio src="./tunes/l.wav" id="A"></audio></div>
+      <div data-note="Bb" class="key black"><span class="note-label">Bb</span><audio src="./tunes/o.wav" id="Bb"></audio></div>
+      <div data-note="B" class="key white"><span class="note-label">B</span><audio src="./tunes/p.wav" id="B"></audio></div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <div class="controls">
+        <button onclick="playAllNotes()">▶️ Play All Notes</button>
+    </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
