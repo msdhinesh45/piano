@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -98,4 +99,156 @@ button {
 button:hover {
     background: linear-gradient(to right, #5e5e5e, #a0a0a0);
     transform: scale(1.05);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(173, 167, 167), rgb(224, 194, 194), rgb(134, 133, 133));
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(3, 3, 3);
+  text-transform: uppercase;
+  font-family: cursive;
+  font-size: 2.5rem;
+}
+
+.wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.piano {
+  display: flex;
+  position: relative;
+}
+
+.key {
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.white {
+  width: 60px;
+  height: 240px;
+  background: linear-gradient(to bottom, #fff, #f3f3f3);
+  border: 1px solid #333;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}
+
+.white:active {
+  background-color: #ccc;
+}
+
+.black {
+  width: 40px;
+  height: 160px;
+  background: linear-gradient(to bottom, #000, #333);
+  margin-left: -20px;
+  margin-right: -20px;
+  z-index: 2;
+  border: 1px solid #111;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+}
+
+.black:active {
+  background-color: #222;
+}
+
+.note-label {
+  font-size: 12px;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: inherit;
+}
+
+.key.active {
+  transform: translateY(4px);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 10px 10px;
+}
+
+button {
+  padding: 12px 25px;
+  background: linear-gradient(to right, #4b4b4b, #888);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #5e5e5e, #a0a0a0);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .white {
+    width: 40px;
+    height: 180px;
+  }
+
+  .black {
+    width: 25px;
+    height: 120px;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .white {
+    width: 30px;
+    height: 140px;
+  }
+
+  .black {
+    width: 20px;
+    height: 90px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 }
