@@ -3,7 +3,7 @@
 This is a simple and interactive piano web application built using HTML, CSS, and JavaScript.
 
 View:
-[Piano ](https://pianotask-dk45.netlify.app/)
+[Piano ](https://my-piano.vercel.app/)
 
 ---
 
